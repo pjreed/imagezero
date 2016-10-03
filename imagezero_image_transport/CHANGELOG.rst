@@ -2,6 +2,10 @@
 Changelog for package imagezero_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.1 (2016-09-03)
+------------------
+* No changes
+
 0.2.0 (2016-09-28)
 ------------------
 * Pulled ROS methods out into a separate library.
