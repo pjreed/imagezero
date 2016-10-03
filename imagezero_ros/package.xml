@@ -11,6 +11,8 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <build_depend>roscpp</build_depend>
+
   <depend>cv_bridge</depend>
   <depend>imagezero</depend>
   <depend>message_runtime</depend>
