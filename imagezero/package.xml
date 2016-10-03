@@ -1,6 +1,6 @@
 <package format="2">
   <name>imagezero</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>
     ImageZero is a fast lossless image compression algorithm for RGB color photos.
   </description>

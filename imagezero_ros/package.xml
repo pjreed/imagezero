@@ -1,6 +1,6 @@
 <package format="2">
   <name>imagezero_ros</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>
     A library that provides convenient methods for manipulating ROS images with ImageZero
   </description>
