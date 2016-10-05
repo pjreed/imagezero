@@ -19,7 +19,15 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_definitions(-DHAVE_MMAP)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmmx -mtune=corei7-avx -Winline -W -Wall -fomit-frame-pointer -fno-rtti -fno-exceptions")
+execute_process(COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCHITECTURE)
+
+message(STATUS "Architecture: ${ARCHITECTURE}")
+
+if(${ARCHITECTURE} STREQUAL "x86_64")
+  set(ARCH_SPECIFIC_FLAGS "-mmmx -mtune=corei7-avx")
+endif()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${ARCH_SPECIFIC_FLAGS} -Winline -W -Wall -fomit-frame-pointer -fno-rtti -fno-exceptions")
 set(CMAKE_EXE_LINKER_FLAGS "-Wl,-O1,-s,--no-export-dynamic")
 
 add_executable(image_zero

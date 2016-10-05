@@ -2,6 +2,11 @@
 Changelog for package imagezero
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.2 (2016-10-05)
+------------------
+* Don't use Intel-specific GCC flags on non-Intel platforms
+* Contributors: P. J. Reed
+
 0.2.1 (2016-09-03)
 ------------------
 * No changes
