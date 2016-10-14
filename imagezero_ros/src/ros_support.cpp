@@ -64,7 +64,7 @@ namespace IZ
     params.push_back(1);
 
     // Update ros message format header
-    compressed.format += "; iz compressed.";
+    compressed.format += "; iz compressed ";
 
     // Check input format
     if ((bitDepth == 8) || (bitDepth == 16))
