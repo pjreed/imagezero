@@ -64,7 +64,7 @@ for help setting up a catkin workspace.
 
 If you're using wstool, add this repository to your wstool workspace:
 
-    wstool set imagezero --git https://github.com/swri-robotics/imagezero_transport.git -v 0.2.2
+    wstool set imagezero --git https://github.com/swri-robotics/imagezero_transport.git -v 0.2.3
 
 ### Checking out the source code (git)
 

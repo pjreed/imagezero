@@ -2,7 +2,7 @@
 Changelog for package imagezero_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.2.3 (Forthcoming)
+0.2.3 (2016-10-14)
 -------------------
 * Fix bug that would flip color channels
 * Contributors: P. J. Reed
