@@ -6,6 +6,20 @@
 #include <imagezero/portableimage.h>
 #include <imagezero/file.h>
 
+/*! \mainpage imagezero
+ *
+ * This package contains the actual ImageZero algorithm written by
+ * Christoph Feck.  Some methods have been modified so that they are
+ * contained within namespaces, the build system has been rewritten
+ * to generate a catkin library, and irrelevant files have been
+ * removed.
+ *
+ * If you are interested in using this algorithm to manipulate ROS
+ * images, you probably actually want to look in the imagezero_ros
+ * package for direct image manipulation or the imagezero_image_transport
+ * package for ROS image_transport plugins.
+ */
+
 static void decodeIZ(const char *infilename, const char *outfilename)
 {
     IZ::PortableImage pi;

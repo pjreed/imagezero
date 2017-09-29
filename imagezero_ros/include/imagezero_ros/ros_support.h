@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2015, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2016-2017, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -41,7 +41,20 @@ namespace IZ
   static bool encode_tables_initialized = false;
   static bool decode_tables_initialized = false;
 
+  /**
+   * Uses the ImageZero algorithm to compress a raw Image into a CompressedImage.
+   * The raw image must have 3 channels and either 8 or 16 bits per channel.
+   * @param[in] image An uncompressed 24-bit color image.
+   * @return A compressed image based on that image.
+   */
   sensor_msgs::CompressedImage compressImage(const sensor_msgs::Image& image);
+
+  /**
+   * Decompresses an image that had previous been compressed using ImageZero
+   * and returns a raw image.
+   * @param[in] compressed An image that was compressed with ImageZero.
+   * @return A raw image.
+   */
   sensor_msgs::Image decompressImage(const sensor_msgs::CompressedImageConstPtr& compressed);
 }
 

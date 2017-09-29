@@ -31,6 +31,22 @@
 #include "imagezero_image_transport/imagezero_publisher.h"
 #include "imagezero_image_transport/imagezero_subscriber.h"
 
+/*! \mainpage imagezero_image_transport
+ *
+ * This packages provides publisher and subscriber plugins for the
+ * <a href="http://wiki.ros.org/image_transport">ROS image_transport</a> package.
+ *
+ * If you are looking for a way to convert between sensor_msgs::Image and
+ * sensor_msgs::CompressedImage messages using the ImageZero compression algorithm,
+ * you should look at the imagezero_ros package.
+ *
+ * If you are using image_transport, you do not need to directly use either of
+ * these classes.  As long as this package is in your ROS package path, any
+ * image_transport::Publishers will automatically publish an "imagezero" topic,
+ * and any image_transport::Subscribers can be made to subscribe to it by
+ * setting their ~image_transport parameter to "imagezero".
+ */
+
 PLUGINLIB_EXPORT_CLASS( imagezero_image_transport::ImageZeroPublisher, image_transport::PublisherPlugin)
 
 PLUGINLIB_EXPORT_CLASS( imagezero_image_transport::ImageZeroSubscriber, image_transport::SubscriberPlugin)

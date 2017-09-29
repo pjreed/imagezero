@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2015, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2016-2017, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -37,6 +37,16 @@
 
 using namespace cv;
 using namespace std;
+
+/*! \mainpage imagezero_ros
+ *
+ * This package contains convenience methods for converting back and forth
+ * between sensor_msgs::Image messages and sensor_msgs::CompressedImage messages.
+ *
+ * The ImageZero algorithm currently only operates on 24-bit PPM data, so under
+ * the hood this uses OpenCV to convert messages into an appropriate format
+ * and then run it through the algorithms in the imagezero package.
+ */
 
 namespace enc = sensor_msgs::image_encodings;
 

@@ -32,7 +32,10 @@
 
 namespace imagezero_image_transport
 {
-
+  /**
+   * ROS image_transport subscriber plugin that will convert sensor_msgs::CompressedImage
+   * message to sensor_msgs::Image messages.
+   */
   class ImageZeroSubscriber : public image_transport::SimpleSubscriberPlugin<sensor_msgs::CompressedImage>
   {
   public:
